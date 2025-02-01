@@ -1,0 +1,4 @@
+push.sh
+.vscode/
+venv/
+.env
