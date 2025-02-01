@@ -1,0 +1,10 @@
+services:
+  localstack:
+    container_name: "localstack-main"
+    image: localstack/snowflake
+    ports:
+      - "4566:4566"
+    environment:
+      - LOCALSTACK_AUTH_TOKEN=myTestToken1234567secret
+    volumes:
+      - "./volume:/var/lib/localstack"
